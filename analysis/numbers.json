@@ -1,0 +1,427 @@
+{
+ "stats": {
+  "I6": {
+   "n": 73,
+   "mean": 0.9993773349937733,
+   "perfect": 72,
+   "valid": 73,
+   "empty": 0,
+   "perr": 0,
+   "cost": 2.4167
+  },
+  "I1": {
+   "n": 73,
+   "mean": 0.9794886821478279,
+   "perfect": 64,
+   "valid": 72,
+   "empty": 0,
+   "perr": 0,
+   "cost": 0.08791679
+  },
+  "I5": {
+   "n": 73,
+   "mean": 0.9726027397260274,
+   "perfect": 71,
+   "valid": 71,
+   "empty": 0,
+   "perr": 0,
+   "cost": 1.4730240000000001
+  },
+  "I3": {
+   "n": 73,
+   "mean": 0.957182623983591,
+   "perfect": 33,
+   "valid": 73,
+   "empty": 0,
+   "perr": 0,
+   "cost": 0.02926654
+  },
+  "I2": {
+   "n": 73,
+   "mean": 0.8763033233218568,
+   "perfect": 15,
+   "valid": 73,
+   "empty": 0,
+   "perr": 0,
+   "cost": 0.0174200775
+  },
+  "I7": {
+   "n": 73,
+   "mean": 0.7795765877957659,
+   "perfect": 56,
+   "valid": 57,
+   "empty": 2,
+   "perr": 2,
+   "cost": 4.140344
+  },
+  "I4": {
+   "n": 73,
+   "mean": 0.2328767123287671,
+   "perfect": 17,
+   "valid": 17,
+   "empty": 56,
+   "perr": 0,
+   "cost": 1.0028413
+  }
+ },
+ "tier": {
+  "I6/easy": 1.0,
+  "I6/medium": 0.9977272727272727,
+  "I6/hard": 1.0,
+  "I6/gold": 1.0,
+  "I1/easy": 1.0,
+  "I1/medium": 0.9795454545454545,
+  "I1/hard": 0.9455882352941176,
+  "I1/gold": 1.0,
+  "I5/easy": 1.0,
+  "I5/medium": 1.0,
+  "I5/hard": 0.95,
+  "I5/gold": 0.9230769230769231,
+  "I3/easy": 0.975,
+  "I3/medium": 0.9363636363636363,
+  "I3/hard": 0.9573529411764706,
+  "I3/gold": 0.9615384615384616,
+  "I2/easy": 0.8708333333333333,
+  "I2/medium": 0.890909090909091,
+  "I2/hard": 0.8367647058823529,
+  "I2/gold": 0.9230769230769231,
+  "I7/easy": 0.95,
+  "I7/medium": 0.9954545454545455,
+  "I7/hard": 0.25,
+  "I7/gold": 1.0,
+  "I4/easy": 0.15,
+  "I4/medium": 0.05,
+  "I4/hard": 0.0,
+  "I4/gold": 1.0
+ },
+ "conf": {
+  "paid->paid": 1053,
+  "overpaid->overpaid": 296,
+  "late_paid->late_paid": 696,
+  "underpaid->underpaid": 580,
+  "unpaid->unpaid": 473,
+  "late_paid->paid": 88,
+  "refunded->refunded": 221,
+  "paid->late_paid": 92,
+  "underpaid->paid": 1,
+  "overpaid->missing": 1,
+  "underpaid->overpaid": 30,
+  "underpaid->late_paid": 2,
+  "paid->underpaid": 7,
+  "overpaid->paid": 16,
+  "overpaid->underpaid": 1,
+  "overpaid->late_paid": 6,
+  "late_paid->underpaid": 1,
+  "overpaid->refunded": 1
+ },
+ "gold_fail": {
+  "g01-exact-cutoff": 0,
+  "g02-one-second-late": 0,
+  "g03-one-second-early": 0,
+  "g04-utc-equal-instant": 2,
+  "g05-utc-clock-text-trap": 2,
+  "g06-partial-and-late": 0,
+  "g07-brl-cents": 0,
+  "g08-refund-with-export-duplicate": 0,
+  "g09-partial-refund": 1,
+  "g10-double-pay-one-refunded": 2,
+  "g11-txid-beats-description": 0,
+  "g12-orphans": 0,
+  "g13-description-link": 0
+ },
+ "hyg": {
+  "I6": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "I1": [
+   0,
+   1,
+   1,
+   1,
+   0
+  ],
+  "I5": [
+   0,
+   0,
+   0,
+   2,
+   0
+  ],
+  "I3": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "I2": [
+   0,
+   5,
+   0,
+   0,
+   0
+  ],
+  "I7": [
+   0,
+   1,
+   0,
+   14,
+   2
+  ],
+  "I4": [
+   0,
+   0,
+   0,
+   0,
+   56
+  ]
+ },
+ "acc": {
+  "paid": [
+   1152,
+   1053,
+   1151
+  ],
+  "overpaid": [
+   321,
+   296,
+   310
+  ],
+  "late_paid": [
+   785,
+   696,
+   784
+  ],
+  "underpaid": [
+   613,
+   580,
+   613
+  ],
+  "unpaid": [
+   473,
+   473,
+   473
+  ],
+  "refunded": [
+   221,
+   221,
+   220
+  ]
+ },
+ "acc_m": {
+  "I1/paid": [
+   189,
+   187,
+   188
+  ],
+  "I1/overpaid": [
+   59,
+   58,
+   58
+  ],
+  "I1/late_paid": [
+   139,
+   137,
+   139
+  ],
+  "I1/underpaid": [
+   108,
+   105,
+   108
+  ],
+  "I1/unpaid": [
+   84,
+   84,
+   84
+  ],
+  "I1/refunded": [
+   39,
+   39,
+   39
+  ],
+  "I2/paid": [
+   193,
+   138,
+   193
+  ],
+  "I2/overpaid": [
+   60,
+   39,
+   51
+  ],
+  "I2/late_paid": [
+   147,
+   70,
+   147
+  ],
+  "I2/underpaid": [
+   110,
+   89,
+   110
+  ],
+  "I2/unpaid": [
+   84,
+   84,
+   84
+  ],
+  "I2/refunded": [
+   40,
+   40,
+   39
+  ],
+  "I3/paid": [
+   193,
+   151,
+   193
+  ],
+  "I3/overpaid": [
+   60,
+   57,
+   60
+  ],
+  "I3/late_paid": [
+   147,
+   137,
+   146
+  ],
+  "I3/underpaid": [
+   110,
+   101,
+   110
+  ],
+  "I3/unpaid": [
+   84,
+   84,
+   84
+  ],
+  "I3/refunded": [
+   40,
+   40,
+   40
+  ],
+  "I4/paid": [
+   23,
+   23,
+   23
+  ],
+  "I4/unpaid": [
+   3,
+   3,
+   3
+  ],
+  "I4/late_paid": [
+   2,
+   2,
+   2
+  ],
+  "I4/overpaid": [
+   3,
+   3,
+   3
+  ],
+  "I4/underpaid": [
+   7,
+   7,
+   7
+  ],
+  "I4/refunded": [
+   1,
+   1,
+   1
+  ],
+  "I5/paid": [
+   192,
+   192,
+   192
+  ],
+  "I5/overpaid": [
+   53,
+   53,
+   53
+  ],
+  "I5/late_paid": [
+   141,
+   141,
+   141
+  ],
+  "I5/underpaid": [
+   108,
+   108,
+   108
+  ],
+  "I5/unpaid": [
+   83,
+   83,
+   83
+  ],
+  "I5/refunded": [
+   40,
+   40,
+   40
+  ],
+  "I6/paid": [
+   193,
+   193,
+   193
+  ],
+  "I6/overpaid": [
+   60,
+   60,
+   59
+  ],
+  "I6/late_paid": [
+   147,
+   147,
+   147
+  ],
+  "I6/underpaid": [
+   110,
+   110,
+   110
+  ],
+  "I6/unpaid": [
+   84,
+   84,
+   84
+  ],
+  "I6/refunded": [
+   40,
+   40,
+   40
+  ],
+  "I7/paid": [
+   169,
+   169,
+   169
+  ],
+  "I7/overpaid": [
+   26,
+   26,
+   26
+  ],
+  "I7/late_paid": [
+   62,
+   62,
+   62
+  ],
+  "I7/underpaid": [
+   60,
+   60,
+   60
+  ],
+  "I7/unpaid": [
+   51,
+   51,
+   51
+  ],
+  "I7/refunded": [
+   21,
+   21,
+   21
+  ]
+ }
+}
