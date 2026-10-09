@@ -31,11 +31,11 @@
   ],
   "review": {
     "path": "CONFERENCIA-INDEPENDENTE-356568120.json",
-    "sha256": "2057b7d7947f11382bf43d84f4c18f614a8046956c8e8001581faf2805fc2faf"
+    "sha256": "d782ad3f299f758605710d656ebbb6f85cd81098a90fc7ec0f7cb5cd06b73eca"
   },
   "opinion": {
     "path": "PARECER-356568120.md",
-    "sha256": "27093d64621ffde37b4ef8fd7bb13ccab269d190fe07473ab7c51c51e2d1794d"
+    "sha256": "259e454a6134f5600d6dad351292574f13e6f8dbdb4ab89d39b543b80fe7449f"
   },
   "traceability": "Task function AST and 73 prompts/responses match frozen source; export does not attest SHA256 of the entire notebook",
   "new_execution": false
