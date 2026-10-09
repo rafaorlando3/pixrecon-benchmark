@@ -4,12 +4,13 @@ PixRecon asks a model to do the job a store does every morning: match each order
 
 Grading is deterministic (no LLM judge): `grader/grader_v4.py` checks the exact schema first and then the content, and reports three numbers per answer: `content_score` in [0, 1], `schema_valid`, and `score` = content_score if the schema is valid, else 0.
 
-This repository contains the frozen fictional cases, exact prompt, deterministic grader, seven-model grid called directly through OpenRouter, provider receipts and analysis. Kaggle task and benchmark links will be added after their publication is confirmed. Historical Kaggle I0 results are separate from this grid; see `RESULTS-PROVENANCE.md`.
+This repository contains the frozen fictional cases, exact prompt, deterministic grader, seven-model grid called directly through OpenRouter, provider receipts and analysis, plus the exact notebook source submitted to Kaggle BuildTask. Kaggle Task Page links will be added after their publication is confirmed. Historical Kaggle I0 results are separate from this grid; see `RESULTS-PROVENANCE.md`.
 
 ## Layout
 
 - `cases/CASES.json`: the 73 frozen cases (`case_id`, `tier`, `exceptions`, `orders_json`, `statement_json`, `expected_json`). Tiers: easy, medium, hard, plus the gold cases (`g01`…) that pin one rule each.
 - `PROMPT.md` and `prompt/prompt.py`: the complete rules and exact input-construction recipe.
+- `kaggle/pixrecon-kaggle-task.ipynb`: the exact notebook source submitted to Kaggle BuildTask version 1 (job `356568120`), using Kaggle Benchmarks SDK `0.6.1`.
 - `grader/grader_v4.py`: the grader. `grade(answer_text, expected_json) -> {"score", "content_score", "schema_valid", "perfect", ...}`.
 - `runs/openrouter-grid-2026-10-07/`: the seven-model grid: 511 logical (model, case) receipts and 520 direct transport attempts, including nine transport-level 429 retries.
   - `GRID-511.csv`: one row per pair (model, case, tier, score, content_score, schema_valid, perfect, tokens, cost in USD, provider, finish reason, hashes of the answer and the raw response).
@@ -32,6 +33,12 @@ This repository contains the frozen fictional cases, exact prompt, deterministic
 | deepseek/deepseek-r1-0528 | 0.233 | 17 | 1.00 |
 
 Mean score counts a schema failure (prose before the JSON, two JSON documents, a duplicate key) and an empty answer as 0, which is the rule the benchmark publishes. The write-up explains the low Gemini and DeepSeek numbers (hard truncation at the token cap and empty outputs, not reconciliation mistakes) and the UTC-offset error that separates Qwen and Gemma from the top three.
+
+## Kaggle notebook source
+
+[The Kaggle notebook](https://www.kaggle.com/code/rafaorlando3/pixrecon-pix-statement-reconciliation-benchmark) uses the source archived at `kaggle/pixrecon-kaggle-task.ipynb`. Its complete file SHA-256 is `b11620a60fdb19d8623a8e0fb587e4a66ddceef9672369a626cf64f744efb760`. The notebook asserts Kaggle Benchmarks SDK `0.6.1`, embeds the exact 73-case JSON bytes (SHA-256 `58603636de7b52b7f75edc1382de15c366ca249fad296a1dce351e22df207f96`), and checks normalized case content hash `a12787bb7dfa021192509942198d2b714e500cd8969215ec1e070918da6e1e29`.
+
+Kaggle BuildTask executes the notebook. The submitted source calls `pixrecon.run(kbench.llm, cases)` with Kaggle's default model selection; its model calls are separate from the frozen seven-model OpenRouter grid above. The effective model and result of this BuildTask job have not yet been confirmed, and the archived source contains no execution outputs. Uploading this source to the repository did not start another run. See `REPRODUCE.md` before executing it.
 
 ## Reproduce the grading
 
