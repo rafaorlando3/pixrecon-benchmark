@@ -23,7 +23,9 @@ Why this task: it is boring, common and unforgiving. A wrong `paid` ships goods 
 
 ## Models Tested
 
-Kaggle Task Page: [[KAGGLE TASK PAGE LINK]]. Verified model: [[KAGGLE MODEL]]. Verified result: [[KAGGLE RESULT]].
+The new Kaggle run completed on **8 October 2026 (America/Asuncion)**. Task Page: https://www.kaggle.com/benchmarks/tasks/rafaorlando3/pixrecon-pix-reconciliation/1. Verified model: `google/gemini-3.7-flash` (Gemini 3.7 Flash). Verified result: mean **1.0000**, reported 95% confidence half-width **0.0000**, 73/73 valid schemas, 73/73 perfect cases and 0 failed cases.
+
+Kaggle selected its default model. All 73 recorded requests completed without a retry. The provider receipts report US$ 1.13706675 of usage-equivalent cost; this run used the Kaggle Model Proxy free quota, which displayed US$ 1.14 of daily usage after completion. This is not a paid invoice. A zero-width reported interval here reflects identical scores on this finite set, not certainty about unseen statements.
 
 The seven-model grid below is a separate frozen evaluation called directly through OpenRouter, using the repository cases, prompt and grader. Temperature and reasoning settings stayed at each provider's defaults; `max_tokens` was 8,192 for everyone. That cap turned out to matter, as you will see.
 
@@ -116,9 +118,9 @@ Give every model a tool for instant comparison and see whether the `paid`/`late_
 
 ## My Benchmark
 
-Benchmark on Kaggle: [[KAGGLE BENCHMARK LINK]]
+Benchmark on Kaggle: https://www.kaggle.com/benchmarks/tasks/rafaorlando3/pixrecon-pix-reconciliation/1
 
-Kaggle Task Page: [[KAGGLE TASK PAGE LINK]]
+Kaggle Task Page: https://www.kaggle.com/benchmarks/tasks/rafaorlando3/pixrecon-pix-reconciliation/1
 
 Notebook (its runtime and publication state are separate from the frozen direct-grid artifacts): https://www.kaggle.com/code/rafaorlando3/pixrecon-pix-statement-reconciliation-benchmark
 

@@ -1,0 +1,125 @@
+{
+  "review_method": "Read JSON as data; SHA-256; standard-library AST/literal inspection; equality/counting of frozen case inputs and expected JSON. No notebook/product/grader/model execution.",
+  "artifact_files": [
+    {
+      "filename": "PixRecon_Pix_Reconciliation-run_id_Run_1_google_gemini-3.7-flash.atif.json",
+      "bytes": 87724,
+      "sha256": "3914d894c6e2c555d7b772b01cd3965ac5cf9c046cfc37fa2894cd96e66e8b34"
+    },
+    {
+      "filename": "PixRecon_Pix_Reconciliation-run_id_Run_1_google_gemini-3.7-flash.result.json",
+      "bytes": 724,
+      "sha256": "0facca057df80aa074f8358041145b0206d55f74ce9852e1d8b930bf8ea91934"
+    },
+    {
+      "filename": "PixRecon_Pix_Reconciliation-run_id_Run_1_google_gemini-3.7-flash.run.json",
+      "bytes": 824977,
+      "sha256": "c16125d44388e753d7dd9fe225f3e6657e02262f43e8c8be2937bac67cdf9bf1"
+    },
+    {
+      "filename": "PixRecon_Pix_Reconciliation.task.json",
+      "bytes": 2699,
+      "sha256": "cf5c0142908620a0efff3b4e6d4a08fdf84bae95471fcbb9a5959dfca0df2ec7"
+    }
+  ],
+  "official_run": {
+    "state": "BENCHMARK_TASK_RUN_STATE_COMPLETED",
+    "task_version": 1,
+    "task_name": "PixRecon Pix Reconciliation",
+    "py_run_id": "PixRecon Pix Reconciliation-Run #1",
+    "model_version_slug": "google/gemini-3.7-flash",
+    "sdk_agent_version": "0.6.1",
+    "score": 1.0,
+    "confidence_interval": 0.0,
+    "start_time": "2026-10-08T23:52:02.602881Z",
+    "end_time": "2026-10-09T00:19:23.501852Z",
+    "duration_seconds": 1640.898971,
+    "result_json_score_model_times_agree": true
+  },
+  "subruns": {
+    "count": 73,
+    "unique_case_ids": 73,
+    "exact_frozen_case_id_set": true,
+    "tier_counts": {
+      "easy": 20,
+      "medium": 20,
+      "hard": 20,
+      "gold": 13
+    },
+    "state_counts": {
+      "BENCHMARK_TASK_RUN_STATE_COMPLETED": 73
+    },
+    "model_counts": {
+      "google/gemini-3.7-flash": 73
+    },
+    "score_1": 73,
+    "content_score_1": 73,
+    "schema_valid": 73,
+    "perfect": 73,
+    "content_errors": 0,
+    "schema_errors": 0,
+    "requests": 73,
+    "unique_request_ids": 73,
+    "observed_extra_attempts": 0
+  },
+  "independent_data_bindings": {
+    "prompt_to_rules_and_orders_statement_exact": 73,
+    "response_sha256_exact": 73,
+    "response_chars_exact": 73,
+    "assistant_sender_model_exact": 73,
+    "strict_json_expected_answer_exact": 73,
+    "expected_order_count": 634,
+    "mismatches": 0,
+    "case_request_prompt_response_bindings_sha256": "95e5d427b419c8b0b881d324610d9416f83ab80f70b7baba3dd795a0af852f82"
+  },
+  "local_frozen_sources": {
+    "notebook_filename": "pixrecon-kaggle-task-candidato-sdk061-retry.ipynb",
+    "notebook_sha256": "b11620a60fdb19d8623a8e0fb587e4a66ddceef9672369a626cf64f744efb760",
+    "notebook_functions_ast_agree_with_official_task_definitions": {
+      "pixrecon": true,
+      "pixrecon_case": true
+    },
+    "task_json_matches_run_task_version": true,
+    "cases_raw_sha256": "58603636de7b52b7f75edc1382de15c366ca249fad296a1dce351e22df207f96",
+    "cases_recipe_sha256": "a12787bb7dfa021192509942198d2b714e500cd8969215ec1e070918da6e1e29",
+    "prompt_source_sha256": "6ebe0f794a9601bf1ae18c531b4712eb8a8e3b4cfff385ca0c9730302d694fc3",
+    "grader_source_sha256": "7752c1e84ee3ca6b8bba34e67007dc1c63ab8b81a92b557b77f55f3fcb283ef2"
+  },
+  "receipt_metrics": {
+    "inputTokens": 208204,
+    "outputTokens": 261577,
+    "inputTokensCostNanodollars": 156153000,
+    "outputTokensCostNanodollars": 980913750,
+    "totalBackendLatencyMs": 1490035
+  },
+  "receipt_cost_metadata_USD_equivalent": 1.13706675,
+  "cost_interpretation": "Nanodollars fields are provider usage/pricing metadata. They do not prove cash billing or zero cash expense; external free quota UI evidence is held by root.",
+  "atif": {
+    "agent_model": "google/gemini-3.7-flash",
+    "agent_sdk_version": "0.6.1",
+    "score": 1.0,
+    "confidence_interval": 0.0,
+    "total_steps": 0,
+    "placeholder_steps": 1,
+    "subruns": 73,
+    "conversion_warning_counts": {
+      "subrun_path_unknown": 73,
+      "reward_leaf_unusable": 438
+    },
+    "interpretation": "Main task orchestration has no own model turn; actual 73 model requests and responses are preserved in run.json subruns. ATIF is a lossy conversion, not a full model trajectory."
+  },
+  "secret_scan": {
+    "files": 4,
+    "strings_examined": 3399,
+    "credential_or_email_occurrences": 0,
+    "private_name_occurrences_observed": 0,
+    "source": "Independent child static JSON scan; secret/token/password/Authorization/LLM_PROXY_KEY/private-key/JWT/email patterns and named fields. No sensitive value copied.",
+    "limitation": "Only these four JSON files; not environment, full notebook, cloud permissions or other artifacts."
+  },
+  "traceability_limits": [
+    "Official JSONs name Task version 1 and SDK 0.6.1 but do not embed full notebook hash, frozen-case recipe hash, or complete grader implementation. Local b116 notebook hash and task AST match are independent documentary bindings; runtime source attestation is not supplied.",
+    "task_checksum in result.json is unknown (kbench); kbench://not-a-harbor-* are converter placeholders, not public Task Page links.",
+    "ATIF conversion preserves numeric rewards but reports 73 subrun_path_unknown and 438 reward_leaf_unusable warnings for omitted nonnumeric fields. Consult run.json for full requests/responses, case ids and hashes.",
+    "No chain-of-custody claim beyond supplied official exports plus independent file hashes; no signed provider response verification."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "job_id": 356568120,
+  "task_page_url": "https://www.kaggle.com/benchmarks/tasks/rafaorlando3/pixrecon-pix-reconciliation/1",
+  "zip": {
+    "path": "results.zip",
+    "bytes": 121023,
+    "sha256": "8412c3688dcef07114fa542c637abeab5f5f009011df6d02f53ab25aff422eb5",
+    "method": "Intact official Kaggle export; no member modified"
+  },
+  "members": [
+    {
+      "path": "PixRecon_Pix_Reconciliation-run_id_Run_1_google_gemini-3.7-flash.atif.json",
+      "bytes": 87724,
+      "sha256": "3914d894c6e2c555d7b772b01cd3965ac5cf9c046cfc37fa2894cd96e66e8b34"
+    },
+    {
+      "path": "PixRecon_Pix_Reconciliation-run_id_Run_1_google_gemini-3.7-flash.result.json",
+      "bytes": 724,
+      "sha256": "0facca057df80aa074f8358041145b0206d55f74ce9852e1d8b930bf8ea91934"
+    },
+    {
+      "path": "PixRecon_Pix_Reconciliation-run_id_Run_1_google_gemini-3.7-flash.run.json",
+      "bytes": 824977,
+      "sha256": "c16125d44388e753d7dd9fe225f3e6657e02262f43e8c8be2937bac67cdf9bf1"
+    },
+    {
+      "path": "PixRecon_Pix_Reconciliation.task.json",
+      "bytes": 2699,
+      "sha256": "cf5c0142908620a0efff3b4e6d4a08fdf84bae95471fcbb9a5959dfca0df2ec7"
+    }
+  ],
+  "review": {
+    "path": "CONFERENCIA-INDEPENDENTE-356568120.json",
+    "sha256": "2057b7d7947f11382bf43d84f4c18f614a8046956c8e8001581faf2805fc2faf"
+  },
+  "opinion": {
+    "path": "PARECER-356568120.md",
+    "sha256": "27093d64621ffde37b4ef8fd7bb13ccab269d190fe07473ab7c51c51e2d1794d"
+  },
+  "traceability": "Task function AST and 73 prompts/responses match frozen source; export does not attest SHA256 of the entire notebook",
+  "new_execution": false
+}
