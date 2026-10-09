@@ -113,7 +113,7 @@
     "strings_examined": 3399,
     "credential_or_email_occurrences": 0,
     "private_name_occurrences_observed": 0,
-    "source": "Independent child static JSON scan; secret/token/password/Authorization/LLM_PROXY_KEY/private-key/JWT/email patterns and named fields. No sensitive value copied.",
+    "source": "Independent static JSON scan; secret/token/password/Authorization/LLM_PROXY_KEY/private-key/JWT/email patterns and named fields. No sensitive value copied.",
     "limitation": "Only these four JSON files; not environment, full notebook, cloud permissions or other artifacts."
   },
   "traceability_limits": [
