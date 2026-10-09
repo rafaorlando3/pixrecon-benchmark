@@ -4,7 +4,7 @@ PixRecon asks a model to do the job a store does every morning: match each order
 
 Grading is deterministic (no LLM judge): `grader/grader_v4.py` checks the exact schema first and then the content, and reports three numbers per answer: `content_score` in [0, 1], `schema_valid`, and `score` = content_score if the schema is valid, else 0.
 
-This repository contains the frozen fictional cases, exact prompt, deterministic grader, seven-model grid called directly through OpenRouter, provider receipts and analysis, plus the exact notebook source submitted to Kaggle BuildTask. The completed Kaggle evaluation is documented below, separately from the frozen grid. Its Task Page and notebook remain private while Kaggle publication awaits confirmation of its permanent Apache 2.0 license requirement; this GitHub repository retains MIT. Historical Kaggle I0 results are separate from this grid; see `RESULTS-PROVENANCE.md`.
+This repository contains the frozen fictional cases, exact prompt, deterministic grader, seven-model grid called directly through OpenRouter, provider receipts and analysis, plus the exact notebook source submitted to Kaggle BuildTask. The completed Kaggle evaluation is documented below, separately from the frozen grid. Task Page version 1 and its parent notebook are public on Kaggle under Apache 2.0; this GitHub repository retains MIT. Historical Kaggle I0 results are separate from this grid; see `RESULTS-PROVENANCE.md`.
 
 ## Layout
 
@@ -47,7 +47,7 @@ Kaggle BuildTask executes the notebook. The submitted source calls `pixrecon.run
 
 The recorded provider receipts total US$1.13706675 of usage-equivalent cost, covered by the Kaggle Model Proxy free quota; this is not a paid invoice. These results do not replace or enter the seven-model, 511-pair OpenRouter grid or earlier frozen Kaggle records. The official export is preserved intact at `kaggle/runs/356568120/results.zip`, with `MANIFEST.json`, an independent documentary review and its opinion. The review confirms 73 exact prompt bindings and 73 response hashes/expected answers, with no extra attempt observed. Official task function AST matches the archived source, but the export does not attest the SHA-256 of the complete notebook file.
 
-Publication status: the Task Page and Kaggle notebook remain private pending Rafael's confirmation of Kaggle's permanent Apache 2.0 license requirement for Make Public. The GitHub repository and its existing `LICENSE` remain MIT. Completing the run, creating a Task Page and making it public are distinct states.
+Publication status: Rafael completed the Kaggle publication confirmation. [Task Page version 1](https://www.kaggle.com/benchmarks/tasks/rafaorlando3/pixrecon-pix-reconciliation/1) and [its parent notebook](https://www.kaggle.com/code/rafaorlando3/pixrecon-pix-statement-reconciliation-benchmark) are public under Kaggle's permanent Apache 2.0 publication license. The GitHub repository and its existing `LICENSE` remain MIT. This publication did not start another run.
 
 ## Reproduce the grading
 
