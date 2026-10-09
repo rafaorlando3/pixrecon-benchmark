@@ -74,9 +74,9 @@
 | g12-orphans | 7/7 | - | - |
 | g13-description-link | 7/7 | - | - |
 
-## Table 7. Hygiene: invented orders, wrong orphan list, missing orders, invalid JSON (per model, 73 cases)
+## Table 7. Hygiene: parsed-answer checks and output failures (73 evaluated cases per model)
 
-| Model | Cases with invented orders | Cases with wrong orphan list (parsed) | Cases with missing orders | Invalid JSON / schema | Empty or error |
+| Model | Cases with invented orders (parsed) | Cases with wrong orphan list (parsed) | Cases with missing orders (parsed) | Invalid JSON / schema | Empty or error |
 |---|---:|---:|---:|---:|---:|
 | gpt-5.5 | 0 | 0 | 0 | 0 | 0 |
 | gpt-oss-120b | 0 | 1 | 1 | 1 | 0 |
@@ -85,6 +85,8 @@
 | qwen3-235b-a22b-2507 | 0 | 5 | 0 | 0 | 0 |
 | gemini-3.1-pro-preview | 0 | 1 | 0 | 14 | 2 |
 | deepseek-r1-0528 | 0 | 0 | 0 | 0 | 56 |
+
+Invented-order, orphan-list and missing-order checks apply to the 436 parseable answers across the 511 evaluated pairs. Zero invented orders were observed in those 436 answers; this does not establish that property for unparseable, empty or provider-error outputs. The 73-case evaluation denominator and the frozen counts above are unchanged.
 
 ## Table 8. Reasoning tokens and latency (median per case)
 
