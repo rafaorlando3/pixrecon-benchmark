@@ -6,6 +6,8 @@ Grading is deterministic (no LLM judge): `grader/grader_v4.py` checks the exact 
 
 This repository contains the frozen fictional cases, exact prompt, deterministic grader, seven-model grid called directly through OpenRouter, provider receipts and analysis, plus the exact notebook source submitted to Kaggle BuildTask. The completed Kaggle evaluation is documented below, separately from the frozen grid. Task Page version 1 and its parent notebook are public on Kaggle under Apache 2.0; this GitHub repository retains MIT. Historical Kaggle I0 results are separate from this grid; see `RESULTS-PROVENANCE.md`.
 
+Published write-up: [7 LLMs reconciled 73 Pix statements](https://dev.to/rafaorlando3/7-llms-reconciled-73-pix-statements-996-correct-order-links-zero-invented-orders-observed-and-2c64). The article reports the completed Kaggle result separately from the frozen seven-model grid. Its published body is archived in `POST-EN.md`.
+
 ## Layout
 
 - `cases/CASES.json`: the 73 frozen cases (`case_id`, `tier`, `exceptions`, `orders_json`, `statement_json`, `expected_json`). Tiers: easy, medium, hard, plus the gold cases (`g01`…) that pin one rule each.
